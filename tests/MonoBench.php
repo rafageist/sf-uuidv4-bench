@@ -57,8 +57,6 @@ class MultiBench
         "4bac233b-a0f3-44b9-e056-c0ec2848f055",
     ];
 
-    private static ?int $PID = null;
-
     public function benchUuidV4Current()
     {
         foreach (self::UUIDS as $uuid) {
@@ -69,7 +67,7 @@ class MultiBench
     public function benchUuidV4Variant1()
     {
         foreach (self::UUIDS as $uuid) {
-            $uuid[19] = ['8', '9', 'a', 'b'][ord($uuid[0]) & 0x3];
+            $uuid[19] = ['8', '9', 'a', 'b'][ord($uuid[19]) & 0x3];
         }
     }
 
@@ -103,18 +101,5 @@ class MultiBench
         foreach (self::UUIDS as $uuid) {
             $uuid[19] = ['8', '9', 'a', 'b'][(int) (time() % 4)];
         }
-    }
-
-    public function benchUuidV4Variant7()
-    {
-        foreach (self::UUIDS as $uuid) {
-
-            if (self::$PID === null) {
-                self::$PID = getmypid();
-            }
-
-            $uuid[19] = ['8', '9', 'a', 'b'][self::$PID % 4];
-        }
-    }
-    
+    }    
 }

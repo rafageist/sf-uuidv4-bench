@@ -15,7 +15,6 @@ php vendor/bin/phpbench run --report=aggregate
 | MonoBench  | benchUuidV4Variant4 |     | 1    | 1   | 682.016kb | 9.844ms  | ±0.00% |
 | MonoBench  | benchUuidV4Variant5 |     | 1    | 1   | 682.016kb | 11.008ms | ±0.00% |
 | MonoBench  | benchUuidV4Variant6 |     | 1    | 1   | 682.016kb | 6.734ms  | ±0.00% |
-| MonoBench  | benchUuidV4Variant7 |     | 1    | 1   | 682.016kb | 3.540ms  | ±0.00% |
 +------------+---------------------+-----+------+-----+-----------+----------+--------+
 
 php vendor/bin/phpbench run --report=aggregate --revs=100
@@ -36,7 +35,6 @@ php vendor/bin/phpbench run --report=aggregate --revs=100
 | MonoBench  | benchUuidV4Variant4 |     | 100  | 1   | 682.016kb | 10.408ms | ±0.00% |
 | MonoBench  | benchUuidV4Variant5 |     | 100  | 1   | 682.016kb | 7.468ms  | ±0.00% |
 | MonoBench  | benchUuidV4Variant6 |     | 100  | 1   | 682.016kb | 5.966ms  | ±0.00% |
-| MonoBench  | benchUuidV4Variant7 |     | 100  | 1   | 682.016kb | 4.168ms  | ±0.00% |
 +------------+---------------------+-----+------+-----+-----------+----------+--------+
 
 php vendor/bin/phpbench run --report=aggregate --revs=10000
@@ -57,7 +55,6 @@ php vendor/bin/phpbench run --report=aggregate --revs=10000
 | MonoBench  | benchUuidV4Variant4 |     | 10000 | 1   | 682.016kb | 10.791ms | ±0.00% |
 | MonoBench  | benchUuidV4Variant5 |     | 10000 | 1   | 682.016kb | 7.719ms  | ±0.00% |
 | MonoBench  | benchUuidV4Variant6 |     | 10000 | 1   | 682.016kb | 5.983ms  | ±0.00% |
-| MonoBench  | benchUuidV4Variant7 |     | 10000 | 1   | 682.016kb | 3.977ms  | ±0.00% |
 +------------+---------------------+-----+-------+-----+-----------+----------+--------+
 
 php vendor/bin/phpbench run --report=aggregate --iterations=100
@@ -78,7 +75,6 @@ php vendor/bin/phpbench run --report=aggregate --iterations=100
 | MonoBench  | benchUuidV4Variant4 |     | 1    | 100 | 682.016kb | 10.132ms | ±17.31% |
 | MonoBench  | benchUuidV4Variant5 |     | 1    | 100 | 682.016kb | 7.181ms  | ±12.79% |
 | MonoBench  | benchUuidV4Variant6 |     | 1    | 100 | 682.016kb | 5.569ms  | ±24.61% |
-| MonoBench  | benchUuidV4Variant7 |     | 1    | 100 | 682.016kb | 3.705ms  | ±14.26% |
 +------------+---------------------+-----+------+-----+-----------+----------+---------+
 
 php vendor/bin/phpbench run --report=aggregate --revs=100 --iterations=100
@@ -99,5 +95,4 @@ php vendor/bin/phpbench run --report=aggregate --revs=100 --iterations=100
 | MonoBench  | benchUuidV4Variant4 |     | 100  | 100 | 682.016kb | 10.763ms | ±5.04%   |
 | MonoBench  | benchUuidV4Variant5 |     | 100  | 100 | 682.016kb | 7.671ms  | ±5.68%   |
 | MonoBench  | benchUuidV4Variant6 |     | 100  | 100 | 682.016kb | 5.895ms  | ±5.28%   |
-| MonoBench  | benchUuidV4Variant7 |     | 100  | 100 | 682.016kb | 3.893ms  | ±7.42%   |
 +------------+---------------------+-----+------+-----+-----------+----------+----------+

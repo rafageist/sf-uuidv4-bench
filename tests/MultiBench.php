@@ -57,8 +57,7 @@ class MonoBench
         "05cbeace-496e-43e3-457a-13da3532e928",
         "4bac233b-a0f3-44b9-e056-c0ec2848f055",
     ];
-    private static ?int $PID = null;
-
+    
     public function benchUuidV4Current()
     {
         for ($i = 0; $i < self::NB_ITER; $i++) {
@@ -113,20 +112,6 @@ class MonoBench
         for ($i = 0; $i < self::NB_ITER; $i++) {
             foreach (self::UUIDS as $uuid) {
                 $uuid[19] = ['8', '9', 'a', 'b'][(int) (time() % 4)];
-            }
-        }
-    }
-
-    public function benchUuidV4Variant7()
-    {
-        for ($i = 0; $i < self::NB_ITER; $i++) {
-            
-            if (self::$PID === null) {
-                self::$PID = getmypid();
-            }
-
-            foreach (self::UUIDS as $uuid) {
-                $uuid[19] = ['8', '9', 'a', 'b'][self::$PID % 4];
             }
         }
     }
