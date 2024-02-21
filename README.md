@@ -2,6 +2,8 @@
 
 This change enhances the generation of the 19th character in UUIDv4 in the Symfony UuidV4 class. The Process ID (PID) has been implemented as a sufficiently random and efficient source.
 
+https://github.com/symfony/symfony/pull/54027
+
 ## Implementation Details
 
 - A Singleton has been introduced to store the PID and avoid its repeated retrieval during script execution.
